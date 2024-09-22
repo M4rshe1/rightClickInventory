@@ -1,0 +1,20 @@
+name: rightClickInventory
+version: '1.0-SNAPSHOT'
+main: me.M4rshe1.rightClickInventory.RightClickInventory
+api-version: '1.21'
+author: M4rshe1
+permissions:
+  rightclickinventory.use.enderchest:
+    description: Allows the player to open their Ender Chest with a right-click
+    default: true
+  rightclickinventory.use.shulkerbox:
+    description: Allows the player to open Shulker Boxes with a right-click
+    default: true
+  rightclickinventory.toggle:
+    description: Allows the player to toggle the right-click inventory feature and shift requirement
+    default: true
+commands:
+  rightClickInventory:
+    description: Toggle right-click inventory functionality or shift requirement
+    usage: /rightClickInventory <toggle|toggleshift>
+    permission: rightclickinventory.toggle
